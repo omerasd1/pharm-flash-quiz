@@ -1,3 +1,4 @@
+
 export interface Question {
   id: string;
   question: string;
@@ -8,7 +9,7 @@ export interface Question {
 }
 
 export const pharmacologyQuestions: Question[] = [
-  // Autonomic Nervous System - Comprehensive Coverage
+  // Autonomic Nervous System
   {
     id: "ans-1",
     question: "A 65-year-old patient with bradycardia (heart rate 45 bpm) is treated with atropine. What is the primary mechanism of action?",
@@ -25,152 +26,8 @@ export const pharmacologyQuestions: Question[] = [
     explanation: "Albuterol is a short-acting beta-2 agonist (SABA) that provides rapid bronchodilation within minutes, making it the rescue inhaler of choice for acute asthma. Salmeterol is long-acting and used for maintenance therapy, not acute episodes.",
     system: "Autonomic Nervous System"
   },
-  {
-    id: "ans-3",
-    question: "A patient with urinary retention after surgery is given bethanechol. What is its mechanism of action?",
-    options: ["Direct muscarinic receptor agonist", "Cholinesterase inhibitor"],
-    correctAnswer: 0,
-    explanation: "Bethanechol is a direct muscarinic receptor agonist that stimulates bladder contraction and promotes urination. It's resistant to cholinesterase breakdown and specifically used for urinary retention and gastroparesis.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-4",
-    question: "Which cholinesterase inhibitor is commonly used for myasthenia gravis?",
-    options: ["Donepezil", "Neostigmine"],
-    correctAnswer: 1,
-    explanation: "Neostigmine is used for myasthenia gravis because it increases acetylcholine levels at the neuromuscular junction by inhibiting cholinesterase. Donepezil is used for Alzheimer's disease. Both are cholinesterase inhibitors but have different clinical applications.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-5",
-    question: "A patient presents with organophosphate poisoning. Which antidote should be administered?",
-    options: ["Physostigmine", "Atropine"],
-    correctAnswer: 1,
-    explanation: "Atropine is the antidote for organophosphate poisoning because it blocks the excessive muscarinic stimulation caused by cholinesterase inhibition. Organophosphates irreversibly inhibit cholinesterase, leading to cholinergic crisis.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-6",
-    question: "Which drug is used for motion sickness and has anticholinergic properties?",
-    options: ["Atropine", "Scopolamine"],
-    correctAnswer: 1,
-    explanation: "Scopolamine is a muscarinic antagonist that crosses the blood-brain barrier effectively and is specifically used for motion sickness. It's available as a transdermal patch and works by blocking central cholinergic pathways involved in nausea and vomiting.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-7",
-    question: "A patient with Parkinson's disease develops drug-induced parkinsonism from antipsychotics. Which medication would help?",
-    options: ["Benztropine", "Carbidopa"],
-    correctAnswer: 0,
-    explanation: "Benztropine is an anticholinergic drug that helps restore the dopamine-acetylcholine balance in the basal ganglia, reducing extrapyramidal symptoms like drug-induced parkinsonism. It blocks muscarinic receptors centrally.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-8",
-    question: "Which drug is a selective alpha-1 agonist used as a nasal decongestant?",
-    options: ["Epinephrine", "Phenylephrine"],
-    correctAnswer: 1,
-    explanation: "Phenylephrine is a selective alpha-1 agonist that causes vasoconstriction, making it effective as a nasal decongestant. It's also used for mydriasis and hypotension. Epinephrine is non-selective and affects multiple receptor types.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-9",
-    question: "Which centrally-acting antihypertensive works by stimulating alpha-2 receptors?",
-    options: ["Prazosin", "Clonidine"],
-    correctAnswer: 1,
-    explanation: "Clonidine is an alpha-2 agonist that acts centrally to reduce sympathetic outflow, lowering blood pressure. It's also used for ADHD and opioid withdrawal. Prazosin is an alpha-1 blocker that acts peripherally.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-10",
-    question: "Which beta-1 selective agonist is used for cardiac stimulation in heart failure?",
-    options: ["Dobutamine", "Isoproterenol"],
-    correctAnswer: 0,
-    explanation: "Dobutamine is a beta-1 selective agonist that increases cardiac contractility and output, making it useful for acute heart failure. Isoproterenol is non-selective and affects both beta-1 and beta-2 receptors.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-11",
-    question: "What is the primary clinical use of salmeterol?",
-    options: ["Acute asthma rescue therapy", "Long-term asthma maintenance therapy"],
-    correctAnswer: 1,
-    explanation: "Salmeterol is a long-acting beta-2 agonist (LABA) used for maintenance therapy in asthma and COPD. It should never be used as monotherapy for asthma - it must always be combined with an inhaled corticosteroid due to increased mortality risk.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-12",
-    question: "Which drug has dose-dependent effects: low dose (renal vasodilation), medium dose (cardiac stimulation), high dose (vasoconstriction)?",
-    options: ["Norepinephrine", "Dopamine"],
-    correctAnswer: 1,
-    explanation: "Dopamine has dose-dependent receptor selectivity: low doses activate dopamine receptors (renal vasodilation), moderate doses activate beta-1 receptors (cardiac stimulation), and high doses activate alpha-1 receptors (vasoconstriction).",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-13",
-    question: "Which alpha-blocker is associated with 'first-dose syncope'?",
-    options: ["Phenoxybenzamine", "Prazosin"],
-    correctAnswer: 1,
-    explanation: "Prazosin and other selective alpha-1 blockers can cause severe orthostatic hypotension and syncope with the first dose. This is due to sudden vasodilation without compensatory mechanisms. Patients should be warned to take the first dose at bedtime.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-14",
-    question: "Which alpha-blocker is irreversible and used specifically for pheochromocytoma?",
-    options: ["Phenoxybenzamine", "Doxazosin"],
-    correctAnswer: 0,
-    explanation: "Phenoxybenzamine is an irreversible, non-selective alpha blocker used for pheochromocytoma. It provides complete alpha blockade, which is essential before surgical removal of the tumor to prevent hypertensive crisis.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-15",
-    question: "Which beta-blocker is non-selective and can mask signs of hypoglycemia?",
-    options: ["Metoprolol", "Propranolol"],
-    correctAnswer: 1,
-    explanation: "Propranolol is a non-selective beta blocker that blocks both beta-1 and beta-2 receptors. It can mask tachycardia and other sympathetic signs of hypoglycemia, making it dangerous in diabetics. It also causes bronchoconstriction.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-16",
-    question: "Which beta-blocker is considered 'cardioselective' and safer for patients with asthma?",
-    options: ["Nadolol", "Metoprolol"],
-    correctAnswer: 1,
-    explanation: "Metoprolol is beta-1 selective ('cardioselective'), making it safer for patients with asthma or COPD because it has less effect on beta-2 receptors in the lungs. However, selectivity is not absolute at higher doses.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-17",
-    question: "Which drug blocks both alpha and beta receptors and is used in hypertensive emergencies?",
-    options: ["Carvedilol", "Labetalol"],
-    correctAnswer: 1,
-    explanation: "Labetalol blocks both alpha and beta receptors and is particularly useful for hypertensive emergencies because it can be given IV and provides controlled blood pressure reduction. Carvedilol is used more for heart failure.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-18",
-    question: "A patient with overactive bladder is prescribed oxybutynin. What is its mechanism?",
-    options: ["Beta-3 agonist", "Muscarinic receptor antagonist"],
-    correctAnswer: 1,
-    explanation: "Oxybutynin is a muscarinic receptor antagonist that reduces bladder contractions by blocking parasympathetic stimulation of the detrusor muscle. Side effects include typical anticholinergic effects like dry mouth and constipation.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-19",
-    question: "Which drug is used for glaucoma and works by increasing aqueous humor outflow?",
-    options: ["Timolol", "Pilocarpine"],
-    correctAnswer: 1,
-    explanation: "Pilocarpine is a muscarinic agonist that causes miosis (pupil constriction) and increases aqueous humor outflow, reducing intraocular pressure in glaucoma. It's also used for Sjögren's syndrome to increase salivation.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-20",
-    question: "What is the major concern with cholinesterase inhibitor overdose?",
-    options: ["Anticholinergic crisis", "Cholinergic crisis"],
-    correctAnswer: 1,
-    explanation: "Cholinesterase inhibitor overdose causes cholinergic crisis with excessive muscarinic and nicotinic stimulation: salivation, lacrimation, urination, defecation, bronchial secretions, miosis, muscle fasciculations, and paralysis. Treatment includes atropine and supportive care.",
-    system: "Autonomic Nervous System"
-  },
 
-  // Cardiovascular System
+  // Cardiovascular
   {
     id: "cv-1",
     question: "A patient with heart failure is started on metoprolol. What is the primary benefit of this beta-1 selective blocker in heart failure?",

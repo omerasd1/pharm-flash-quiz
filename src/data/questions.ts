@@ -1,4 +1,3 @@
-
 export interface Question {
   id: string;
   question: string;
@@ -9,254 +8,274 @@ export interface Question {
 }
 
 export const pharmacologyQuestions: Question[] = [
-  // Autonomic Nervous System - Comprehensive Coverage
+  // Autonomic Nervous System
   {
     id: "ans-1",
-    question: "A 65-year-old patient with bradycardia (heart rate 45 bpm) is treated with atropine. What is the primary mechanism of action?",
-    options: ["Stimulates beta-1 adrenergic receptors", "Blocks muscarinic acetylcholine receptors"],
+    question: "Which drug is a direct muscarinic agonist used to treat urinary retention?",
+    options: ["Neostigmine", "Bethanechol"],
     correctAnswer: 1,
-    explanation: "Atropine is a muscarinic receptor antagonist that blocks parasympathetic stimulation, allowing sympathetic activity to predominate and increase heart rate. Remember the mnemonic: 'Hot as a hare, blind as a bat, dry as a bone, red as a beet, mad as a hatter.'",
+    explanation: "Bethanechol is a direct muscarinic receptor agonist that stimulates bladder contraction, making it effective for urinary retention. Neostigmine is a cholinesterase inhibitor used for myasthenia gravis, increasing acetylcholine indirectly.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-2",
-    question: "Which drug would be most appropriate for treating acute asthma exacerbation?",
-    options: ["Salmeterol (long-acting beta-2 agonist)", "Albuterol (short-acting beta-2 agonist)"],
+    question: "What is the primary mechanism of atropine in treating organophosphate poisoning?",
+    options: ["Increases acetylcholine levels", "Blocks muscarinic receptors"],
     correctAnswer: 1,
-    explanation: "Albuterol is a short-acting beta-2 agonist (SABA) that provides rapid bronchodilation within minutes, making it the rescue inhaler of choice for acute asthma. Salmeterol is long-acting and used for maintenance therapy, not acute episodes.",
+    explanation: "Atropine is a muscarinic receptor antagonist that counteracts the excessive cholinergic effects (e.g., salivation, bronchoconstriction) caused by organophosphate poisoning. It does not increase acetylcholine levels.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-3",
-    question: "A patient with urinary retention after surgery is given bethanechol. What is its mechanism of action?",
-    options: ["Direct muscarinic receptor agonist", "Cholinesterase inhibitor"],
-    correctAnswer: 0,
-    explanation: "Bethanechol is a direct muscarinic receptor agonist that stimulates bladder contraction and promotes urination. It's resistant to cholinesterase breakdown and specifically used for urinary retention and gastroparesis.",
+    question: "Which drug is a selective alpha-2 agonist used for hypertension?",
+    options: ["Prazosin", "Clonidine"],
+    correctAnswer: 1,
+    explanation: "Clonidine is an alpha-2 agonist that reduces sympathetic outflow from the CNS, lowering blood pressure. Prazosin is an alpha-1 blocker used for hypertension and BPH, causing vasodilation.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-4",
-    question: "Which cholinesterase inhibitor is commonly used for myasthenia gravis?",
-    options: ["Donepezil", "Neostigmine"],
+    question: "Which beta-blocker is cardioselective and safer for patients with asthma?",
+    options: ["Propranolol", "Metoprolol"],
     correctAnswer: 1,
-    explanation: "Neostigmine is used for myasthenia gravis because it increases acetylcholine levels at the neuromuscular junction by inhibiting cholinesterase. Donepezil is used for Alzheimer's disease. Both are cholinesterase inhibitors but have different clinical applications.",
+    explanation: "Metoprolol is a beta-1 selective blocker, reducing the risk of bronchoconstriction compared to non-selective propranolol, making it safer for asthma patients. Selectivity diminishes at higher doses.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-5",
-    question: "A patient presents with organophosphate poisoning. Which antidote should be administered?",
-    options: ["Physostigmine", "Atropine"],
+    question: "What is a major side effect of selective alpha-1 blockers like prazosin?",
+    options: ["Tachycardia", "First-dose syncope"],
     correctAnswer: 1,
-    explanation: "Atropine is the antidote for organophosphate poisoning because it blocks the excessive muscarinic stimulation caused by cholinesterase inhibition. Organophosphates irreversibly inhibit cholinesterase, leading to cholinergic crisis.",
+    explanation: "Prazosin can cause severe orthostatic hypotension, leading to 'first-dose syncope' due to sudden vasodilation. Patients should take the first dose at bedtime to minimize this risk.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-6",
-    question: "Which drug is used for motion sickness and has anticholinergic properties?",
-    options: ["Atropine", "Scopolamine"],
+    question: "Which drug is used for motion sickness and acts as a muscarinic antagonist?",
+    options: ["Oxybutynin", "Scopolamine"],
     correctAnswer: 1,
-    explanation: "Scopolamine is a muscarinic antagonist that crosses the blood-brain barrier effectively and is specifically used for motion sickness. It's available as a transdermal patch and works by blocking central cholinergic pathways involved in nausea and vomiting.",
+    explanation: "Scopolamine is a muscarinic antagonist that crosses the blood-brain barrier, making it effective for motion sickness by blocking central cholinergic pathways. Oxybutynin is used for overactive bladder.",
     system: "Autonomic Nervous System"
   },
   {
     id: "ans-7",
-    question: "A patient with Parkinson's disease develops drug-induced parkinsonism from antipsychotics. Which medication would help?",
-    options: ["Benztropine", "Carbidopa"],
-    correctAnswer: 0,
-    explanation: "Benztropine is an anticholinergic drug that helps restore the dopamine-acetylcholine balance in the basal ganglia, reducing extrapyramidal symptoms like drug-induced parkinsonism. It blocks muscarinic receptors centrally.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-8",
-    question: "Which drug is a selective alpha-1 agonist used as a nasal decongestant?",
-    options: ["Epinephrine", "Phenylephrine"],
+    question: "Which drug is a beta-1 selective agonist used in acute heart failure?",
+    options: ["Isoproterenol", "Dobutamine"],
     correctAnswer: 1,
-    explanation: "Phenylephrine is a selective alpha-1 agonist that causes vasoconstriction, making it effective as a nasal decongestant. It's also used for mydriasis and hypotension. Epinephrine is non-selective and affects multiple receptor types.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-9",
-    question: "Which centrally-acting antihypertensive works by stimulating alpha-2 receptors?",
-    options: ["Prazosin", "Clonidine"],
-    correctAnswer: 1,
-    explanation: "Clonidine is an alpha-2 agonist that acts centrally to reduce sympathetic outflow, lowering blood pressure. It's also used for ADHD and opioid withdrawal. Prazosin is an alpha-1 blocker that acts peripherally.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-10",
-    question: "Which beta-1 selective agonist is used for cardiac stimulation in heart failure?",
-    options: ["Dobutamine", "Isoproterenol"],
-    correctAnswer: 0,
-    explanation: "Dobutamine is a beta-1 selective agonist that increases cardiac contractility and output, making it useful for acute heart failure. Isoproterenol is non-selective and affects both beta-1 and beta-2 receptors.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-11",
-    question: "What is the primary clinical use of salmeterol?",
-    options: ["Acute asthma rescue therapy", "Long-term asthma maintenance therapy"],
-    correctAnswer: 1,
-    explanation: "Salmeterol is a long-acting beta-2 agonist (LABA) used for maintenance therapy in asthma and COPD. It should never be used as monotherapy for asthma - it must always be combined with an inhaled corticosteroid due to increased mortality risk.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-12",
-    question: "Which drug has dose-dependent effects: low dose (renal vasodilation), medium dose (cardiac stimulation), high dose (vasoconstriction)?",
-    options: ["Norepinephrine", "Dopamine"],
-    correctAnswer: 1,
-    explanation: "Dopamine has dose-dependent receptor selectivity: low doses activate dopamine receptors (renal vasodilation), moderate doses activate beta-1 receptors (cardiac stimulation), and high doses activate alpha-1 receptors (vasoconstriction).",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-13",
-    question: "Which alpha-blocker is associated with 'first-dose syncope'?",
-    options: ["Phenoxybenzamine", "Prazosin"],
-    correctAnswer: 1,
-    explanation: "Prazosin and other selective alpha-1 blockers can cause severe orthostatic hypotension and syncope with the first dose. This is due to sudden vasodilation without compensatory mechanisms. Patients should be warned to take the first dose at bedtime.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-14",
-    question: "Which alpha-blocker is irreversible and used specifically for pheochromocytoma?",
-    options: ["Phenoxybenzamine", "Doxazosin"],
-    correctAnswer: 0,
-    explanation: "Phenoxybenzamine is an irreversible, non-selective alpha blocker used for pheochromocytoma. It provides complete alpha blockade, which is essential before surgical removal of the tumor to prevent hypertensive crisis.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-15",
-    question: "Which beta-blocker is non-selective and can mask signs of hypoglycemia?",
-    options: ["Metoprolol", "Propranolol"],
-    correctAnswer: 1,
-    explanation: "Propranolol is a non-selective beta blocker that blocks both beta-1 and beta-2 receptors. It can mask tachycardia and other sympathetic signs of hypoglycemia, making it dangerous in diabetics. It also causes bronchoconstriction.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-16",
-    question: "Which beta-blocker is considered 'cardioselective' and safer for patients with asthma?",
-    options: ["Nadolol", "Metoprolol"],
-    correctAnswer: 1,
-    explanation: "Metoprolol is beta-1 selective ('cardioselective'), making it safer for patients with asthma or COPD because it has less effect on beta-2 receptors in the lungs. However, selectivity is not absolute at higher doses.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-17",
-    question: "Which drug blocks both alpha and beta receptors and is used in hypertensive emergencies?",
-    options: ["Carvedilol", "Labetalol"],
-    correctAnswer: 1,
-    explanation: "Labetalol blocks both alpha and beta receptors and is particularly useful for hypertensive emergencies because it can be given IV and provides controlled blood pressure reduction. Carvedilol is used more for heart failure.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-18",
-    question: "A patient with overactive bladder is prescribed oxybutynin. What is its mechanism?",
-    options: ["Beta-3 agonist", "Muscarinic receptor antagonist"],
-    correctAnswer: 1,
-    explanation: "Oxybutynin is a muscarinic receptor antagonist that reduces bladder contractions by blocking parasympathetic stimulation of the detrusor muscle. Side effects include typical anticholinergic effects like dry mouth and constipation.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-19",
-    question: "Which drug is used for glaucoma and works by increasing aqueous humor outflow?",
-    options: ["Timolol", "Pilocarpine"],
-    correctAnswer: 1,
-    explanation: "Pilocarpine is a muscarinic agonist that causes miosis (pupil constriction) and increases aqueous humor outflow, reducing intraocular pressure in glaucoma. It's also used for Sjögren's syndrome to increase salivation.",
-    system: "Autonomic Nervous System"
-  },
-  {
-    id: "ans-20",
-    question: "What is the major concern with cholinesterase inhibitor overdose?",
-    options: ["Anticholinergic crisis", "Cholinergic crisis"],
-    correctAnswer: 1,
-    explanation: "Cholinesterase inhibitor overdose causes cholinergic crisis with excessive muscarinic and nicotinic stimulation: salivation, lacrimation, urination, defecation, bronchial secretions, miosis, muscle fasciculations, and paralysis. Treatment includes atropine and supportive care.",
+    explanation: "Dobutamine is a beta-1 selective agonist that increases cardiac contractility, making it suitable for acute heart failure. Isoproterenol is non-selective and affects both beta-1 and beta-2 receptors.",
     system: "Autonomic Nervous System"
   },
 
   // Cardiovascular System
   {
     id: "cv-1",
-    question: "A patient with heart failure is started on metoprolol. What is the primary benefit of this beta-1 selective blocker in heart failure?",
-    options: ["Increases cardiac contractility and heart rate", "Reduces cardiac workload and improves long-term survival"],
+    question: "Which diuretic is most effective for acute pulmonary edema?",
+    options: ["Hydrochlorothiazide", "Furosemide"],
     correctAnswer: 1,
-    explanation: "Beta-blockers like metoprolol reduce cardiac workload by decreasing heart rate and contractility, allowing the heart to recover and remodel. They improve long-term survival in heart failure patients despite initially seeming counterintuitive.",
+    explanation: "Furosemide, a loop diuretic, is the most potent diuretic and acts rapidly to reduce fluid overload in acute pulmonary edema by inhibiting the Na-K-2Cl transporter. Hydrochlorothiazide is less potent and used for hypertension.",
     system: "Cardiovascular"
   },
   {
     id: "cv-2",
-    question: "Which diuretic is most potent and appropriate for acute pulmonary edema?",
-    options: ["Hydrochlorothiazide (thiazide diuretic)", "Furosemide (loop diuretic)"],
+    question: "What is a common side effect of ACE inhibitors like lisinopril?",
+    options: ["Hypokalemia", "Dry cough"],
     correctAnswer: 1,
-    explanation: "Furosemide is a loop diuretic that blocks the Na-K-2Cl transporter in the thick ascending limb of Henle. It's the most potent diuretic and provides rapid, powerful diuresis needed for acute pulmonary edema. Remember: causes hypokalemia and ototoxicity.",
+    explanation: "ACE inhibitors like lisinopril cause a dry cough due to bradykinin accumulation. They also risk hyperkalemia, not hypokalemia, due to reduced aldosterone secretion.",
+    system: "Cardiovascular"
+  },
+  {
+    id: "cv-3",
+    question: "Which antiarrhythmic drug is associated with pulmonary fibrosis and thyroid dysfunction?",
+    options: ["Flecainide", "Amiodarone"],
+    correctAnswer: 1,
+    explanation: "Amiodarone, a Class III antiarrhythmic, prolongs the QT interval and has multiple side effects, including pulmonary fibrosis, liver toxicity, and thyroid dysfunction ('PFTs, LFTs, TFTs'). Flecainide is a Class IC drug contraindicated in structural heart disease.",
+    system: "Cardiovascular"
+  },
+  {
+    id: "cv-4",
+    question: "Which anticoagulant requires monitoring of PT/INR?",
+    options: ["Heparin", "Warfarin"],
+    correctAnswer: 1,
+    explanation: "Warfarin requires PT/INR monitoring due to its narrow therapeutic window and variable metabolism. Heparin is monitored with PTT and has a more immediate onset.",
+    system: "Cardiovascular"
+  },
+  {
+    id: "cv-5",
+    question: "What is the primary mechanism of statins like atorvastatin?",
+    options: ["Inhibit cholesterol absorption", "Inhibit HMG-CoA reductase"],
+    correctAnswer: 1,
+    explanation: "Statins like atorvastatin inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis and lowering LDL levels. Ezetimibe inhibits cholesterol absorption in the gut.",
     system: "Cardiovascular"
   },
 
   // Renal System
   {
     id: "renal-1",
-    question: "A patient develops hypokalemia while taking hydrochlorothiazide. Which diuretic could be added to prevent further potassium loss?",
-    options: ["Furosemide (loop diuretic)", "Spironolactone (potassium-sparing diuretic)"],
+    question: "Which diuretic acts in the collecting duct to prevent potassium loss?",
+    options: ["Furosemide", "Spironolactone"],
     correctAnswer: 1,
-    explanation: "Spironolactone is a potassium-sparing diuretic that blocks aldosterone receptors in the collecting duct, preventing potassium loss. It's often combined with thiazides to counteract hypokalemia. Watch for hyperkalemia and gynecomastia as side effects.",
+    explanation: "Spironolactone is a potassium-sparing diuretic that blocks aldosterone receptors in the collecting duct, preventing potassium loss. Furosemide is a loop diuretic that causes hypokalemia.",
+    system: "Renal System"
+  },
+  {
+    id: "renal-2",
+    question: "Which drug is used for central diabetes insipidus?",
+    options: ["Demeclocycline", "Desmopressin"],
+    correctAnswer: 1,
+    explanation: "Desmopressin is a synthetic ADH analog used for central diabetes insipidus and nocturnal enuresis. Demeclocycline is an ADH antagonist used for SIADH.",
+    system: "Renal System"
+  },
+  {
+    id: "renal-3",
+    question: "Which drug class is notorious for nephrotoxicity due to afferent arteriole constriction?",
+    options: ["Aminoglycosides", "NSAIDs"],
+    correctAnswer: 1,
+    explanation: "NSAIDs can cause nephrotoxicity by inhibiting prostaglandin synthesis, leading to afferent arteriole constriction and reduced renal blood flow. Aminoglycosides primarily cause tubular toxicity.",
     system: "Renal System"
   },
 
   // Respiratory System
   {
     id: "resp-1",
-    question: "For long-term asthma control, which medication class should be the first-line therapy?",
-    options: ["Long-acting beta-2 agonists (LABAs)", "Inhaled corticosteroids (ICS)"],
+    question: "Which medication is first-line for long-term asthma control?",
+    options: ["Salmeterol", "Fluticasone"],
     correctAnswer: 1,
-    explanation: "Inhaled corticosteroids like fluticasone are first-line for long-term asthma control because they reduce airway inflammation. LABAs should never be used as monotherapy for asthma and must always be combined with ICS. Remember: ICS can cause oral candidiasis and dysphonia.",
+    explanation: "Fluticasone, an inhaled corticosteroid, is first-line for long-term asthma control due to its anti-inflammatory effects. Salmeterol, a LABA, must always be used with an ICS and is not for monotherapy.",
+    system: "Respiratory System"
+  },
+  {
+    id: "resp-2",
+    question: "Which drug is a short-acting beta-2 agonist used as a rescue inhaler?",
+    options: ["Ipratropium", "Albuterol"],
+    correctAnswer: 1,
+    explanation: "Albuterol is a short-acting beta-2 agonist (SABA) that provides rapid bronchodilation for acute asthma exacerbations. Ipratropium is an antimuscarinic used primarily for COPD.",
     system: "Respiratory System"
   },
 
-  // Gastrointestinal
+  // Gastrointestinal System
   {
     id: "gi-1",
-    question: "Which medication provides the most effective acid suppression for treating peptic ulcer disease?",
-    options: ["Ranitidine (H2 receptor blocker)", "Omeprazole (proton pump inhibitor)"],
+    question: "Which drug provides the most potent acid suppression for GERD?",
+    options: ["Ranitidine", "Omeprazole"],
     correctAnswer: 1,
-    explanation: "Omeprazole irreversibly inhibits the H+/K+ ATPase (proton pump), providing the most potent and long-lasting acid suppression. It's more effective than H2 blockers for treating GERD and peptic ulcers. Long-term use may increase risk of C. difficile and hip fractures.",
+    explanation: "Omeprazole, a proton pump inhibitor, irreversibly inhibits H+/K+ ATPase, providing superior acid suppression compared to H2 blockers like ranitidine. Long-term use may increase C. difficile risk.",
+    system: "Gastrointestinal"
+  },
+  {
+    id: "gi-2",
+    question: "Which antiemetic is a 5-HT3 receptor antagonist used for chemotherapy-induced nausea?",
+    options: ["Metoclopramide", "Ondansetron"],
+    correctAnswer: 1,
+    explanation: "Ondansetron is a 5-HT3 antagonist effective for chemotherapy-induced nausea. Metoclopramide is a dopamine receptor blocker and prokinetic, with a risk of tardive dyskinesia.",
     system: "Gastrointestinal"
   },
 
   // Endocrine System
   {
     id: "endo-1",
-    question: "Which medication is considered first-line therapy for type 2 diabetes mellitus?",
-    options: ["Glipizide (sulfonylurea)", "Metformin (biguanide)"],
+    question: "Which drug is first-line for type 2 diabetes mellitus?",
+    options: ["Glipizide", "Metformin"],
     correctAnswer: 1,
-    explanation: "Metformin is first-line for T2DM because it decreases hepatic glucose production and increases insulin sensitivity without causing hypoglycemia or weight gain. Unlike sulfonylureas, it doesn't stimulate insulin release. Rare but serious side effect is lactic acidosis.",
+    explanation: "Metformin, a biguanide, is first-line for type 2 diabetes as it reduces hepatic glucose production and increases insulin sensitivity without causing hypoglycemia. Glipizide, a sulfonylurea, risks hypoglycemia.",
+    system: "Endocrine System"
+  },
+  {
+    id: "endo-2",
+    question: "Which drug is preferred for hyperthyroidism in pregnancy?",
+    options: ["Methimazole", "Propylthiouracil"],
+    correctAnswer: 1,
+    explanation: "Propylthiouracil (PTU) is preferred in pregnancy due to lower teratogenic risk compared to methimazole, though it carries a risk of liver failure. Both inhibit thyroid hormone synthesis.",
     system: "Endocrine System"
   },
 
-  // Musculoskeletal
+  // Musculoskeletal System
   {
     id: "msk-1",
-    question: "For acute gout attack, which medication directly inhibits microtubule polymerization in neutrophils?",
-    options: ["Indomethacin (NSAID)", "Colchicine"],
+    question: "Which drug inhibits microtubule polymerization for acute gout treatment?",
+    options: ["Allopurinol", "Colchicine"],
     correctAnswer: 1,
-    explanation: "Colchicine inhibits microtubule polymerization, preventing neutrophil migration and reducing inflammation in acute gout. While NSAIDs like indomethacin also treat acute gout, colchicine has a unique mechanism specifically targeting the inflammatory cascade in gout.",
+    explanation: "Colchicine inhibits microtubule polymerization, reducing neutrophil migration and inflammation in acute gout. Allopurinol is used for chronic gout to lower uric acid levels.",
+    system: "Musculoskeletal"
+  },
+  {
+    id: "msk-2",
+    question: "Which bisphosphonate side effect requires patients to sit upright after taking?",
+    options: ["Osteonecrosis of the jaw", "Esophagitis"],
+    correctAnswer: 1,
+    explanation: "Bisphosphonates like alendronate can cause esophagitis, requiring patients to take the drug with water and remain upright for 30 minutes to prevent esophageal irritation.",
     system: "Musculoskeletal"
   },
 
-  // CNS & Psychiatry
+  // Hematology & Oncology
   {
-    id: "cns-1",
-    question: "Which antidepressant is associated with the lowest risk of sexual side effects?",
-    options: ["Sertraline (SSRI)", "Bupropion (atypical antidepressant)"],
+    id: "hema-1",
+    question: "Which chemotherapy drug is associated with cardiotoxicity?",
+    options: ["Cyclophosphamide", "Doxorubicin"],
     correctAnswer: 1,
-    explanation: "Bupropion is a norepinephrine/dopamine reuptake inhibitor with minimal sexual side effects, unlike SSRIs which commonly cause sexual dysfunction. It's also used for smoking cessation. However, it can lower seizure threshold and is contraindicated in eating disorders.",
-    system: "CNS & Psychiatry"
+    explanation: "Doxorubicin, an antitumor antibiotic, intercalates DNA and is associated with dilated cardiomyopathy. Cyclophosphamide causes hemorrhagic cystitis, prevented by mesna.",
+    system: "Hematology & Oncology"
+  },
+  {
+    id: "hema-2",
+    question: "Which drug stimulates neutrophil production in chemotherapy-induced neutropenia?",
+    options: ["Epoetin alfa", "Filgrastim"],
+    correctAnswer: 1,
+    explanation: "Filgrastim (G-CSF) stimulates neutrophil production, used for chemotherapy-induced neutropenia. Epoetin alfa is used for anemia in chronic kidney disease.",
+    system: "Hematology & Oncology"
   },
 
   // Infectious Diseases
   {
     id: "id-1",
-    question: "Which antibiotic class has the broadest spectrum against gram-positive, gram-negative, and anaerobic bacteria?",
-    options: ["Cephalosporins", "Carbapenems"],
+    question: "Which antibiotic is associated with red man syndrome?",
+    options: ["Vancomycin", "Ciprofloxacin"],
     correctAnswer: 1,
-    explanation: "Carbapenems like meropenem and imipenem have the broadest spectrum of all beta-lactam antibiotics, covering gram-positive, gram-negative, and anaerobic bacteria. They're often reserved for severe infections. Imipenem requires cilastatin to prevent renal metabolism.",
+    explanation: "Vancomycin, used for MRSA and C. difficile, can cause red man syndrome due to histamine release if infused too quickly. Ciprofloxacin, a fluoroquinolone, risks tendon rupture and QT prolongation.",
     system: "Infectious Diseases"
+  },
+  {
+    id: "id-2",
+    question: "Which antifungal is known for severe nephrotoxicity ('ampho-terrible')?",
+    options: ["Fluconazole", "Amphotericin B"],
+    correctAnswer: 1,
+    explanation: "Amphotericin B is a broad-spectrum antifungal with severe nephrotoxicity, hypokalemia, and infusion-related reactions. Fluconazole, an azole, is less toxic and used for Candida infections.",
+    system: "Infectious Diseases"
+  },
+
+  // CNS & Psychiatry
+  {
+    id: "cns-1",
+    question: "Which antidepressant has the lowest risk of sexual side effects?",
+    options: ["Sertraline", "Bupropion"],
+    correctAnswer: 1,
+    explanation: "Bupropion, a norepinephrine/dopamine reuptake inhibitor, has minimal sexual side effects compared to SSRIs like sertraline. It also lowers seizure threshold and is used for smoking cessation.",
+    system: "CNS & Psychiatry"
+  },
+  {
+    id: "cns-2",
+    question: "Which antipsychotic is associated with agranulocytosis, requiring WBC monitoring?",
+    options: ["Risperidone", "Clozapine"],
+    correctAnswer: 1,
+    explanation: "Clozapine, an atypical antipsychotic, is highly effective but requires WBC monitoring due to the risk of agranulocytosis. Risperidone has a lower risk but causes metabolic side effects.",
+    system: "CNS & Psychiatry"
+  },
+
+  // Immunology
+  {
+    id: "imm-1",
+    question: "Which immunosuppressant is associated with gingival hyperplasia and hirsutism?",
+    options: ["Tacrolimus", "Cyclosporine"],
+    correctAnswer: 1,
+    explanation: "Cyclosporine, a calcineurin inhibitor, causes gingival hyperplasia and hirsutism, along with nephrotoxicity. Tacrolimus has similar renal risks but less gingival hyperplasia.",
+    system: "Immunology"
+  },
+  {
+    id: "imm-2",
+    question: "Which biologic targets TNF-α for rheumatoid arthritis treatment?",
+    options: ["Rituximab", "Infliximab"],
+    correctAnswer: 1,
+    explanation: "Infliximab is an anti-TNF-α biologic used for rheumatoid arthritis and IBD, with a risk of TB reactivation. Rituximab targets CD20 on B-cells, used for lymphoma and autoimmune diseases.",
+    system: "Immunology"
   }
 ];
 
@@ -275,7 +294,7 @@ export const organSystems = [
   },
   {
     id: "renal",
-    title: "Renal System", 
+    title: "Renal System",
     description: "Diuretics and drugs affecting kidney function and electrolyte balance",
     questionsCount: pharmacologyQuestions.filter(q => q.system === "Renal System").length
   },
@@ -304,15 +323,27 @@ export const organSystems = [
     questionsCount: pharmacologyQuestions.filter(q => q.system === "Musculoskeletal").length
   },
   {
-    id: "cns",
-    title: "CNS & Psychiatry",
-    description: "Antidepressants, antipsychotics, mood stabilizers, and neurological drugs",
-    questionsCount: pharmacologyQuestions.filter(q => q.system === "CNS & Psychiatry").length
+    id: "hema",
+    title: "Hematology & Oncology",
+    description: "Anemia drugs, chemotherapy, and immunosuppressive agents",
+    questionsCount: pharmacologyQuestions.filter(q => q.system === "Hematology & Oncology").length
   },
   {
     id: "id",
     title: "Infectious Diseases",
     description: "Antibiotics, antivirals, antifungals, and antimicrobial therapy principles",
     questionsCount: pharmacologyQuestions.filter(q => q.system === "Infectious Diseases").length
+  },
+  {
+    id: "cns",
+    title: "CNS & Psychiatry",
+    description: "Antidepressants, antipsychotics, mood stabilizers, and neurological drugs",
+    questionsCount: pharmacologyQuestions.filter(q => q.system === "CNS & Psychiatry").length
+  },
+  {
+    id: "imm",
+    title: "Immunology",
+    description: "Immunosuppressants for transplantation and autoimmune diseases",
+    questionsCount: pharmacologyQuestions.filter(q => q.system === "Immunology").length
   }
 ];
